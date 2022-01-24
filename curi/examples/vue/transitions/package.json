@@ -1,0 +1,19 @@
+{
+  "name": "@curi-example/transitions-vue",
+  "private": true,
+  "description": "Animate transitions betweeen locations",
+  "main": "index.js",
+  "keywords": [
+    "curi",
+    "transition",
+    "animation"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/router": "2.1.2",
+    "@curi/vue": "2.0.0-alpha.13",
+    "@hickory/browser": "^2.1.0",
+    "vue": "^2.5.22"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@curi/helpers",
+  "version": "2.0.2",
+  "description": "Functions that can be useful in Curi apps",
+  "main": "dist/curi-helpers.js",
+  "module": "dist/curi-helpers.es.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "*.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prebuild": "rimraf dist && rimraf types",
+    "build": "rollup -c",
+    "coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "test": "npm run test:source && npm run test:cjs && npm run test:umd",
+    "test:cjs": "TEST_ENV=cjs jest",
+    "test:source": "jest",
+    "test:umd": "TEST_ENV=umd jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshrmn/curi/tree/master/packages/helpers"
+  },
+  "keywords": [
+    "Curi"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT"
+}

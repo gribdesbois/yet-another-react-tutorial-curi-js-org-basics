@@ -1,0 +1,10 @@
+{
+  "name": "@curi-example/serve-examples",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "scripts": {
+    "serve-example": "node server.js"
+  }
+}

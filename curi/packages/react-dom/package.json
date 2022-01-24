@@ -1,0 +1,47 @@
+{
+  "name": "@curi/react-dom",
+  "version": "2.0.4",
+  "description": "React DOM components to use with Curi",
+  "main": "dist/curi-react-dom.js",
+  "module": "dist/curi-react-dom.es.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "typings",
+    "LICENSE",
+    "*.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prebuild": "rimraf dist && rimraf types",
+    "build": "rollup -c",
+    "coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "test": "npm run test:source && npm run test:cjs && npm run test:umd",
+    "test:cjs": "TEST_ENV=cjs jest",
+    "test:source": "jest",
+    "test:umd": "TEST_ENV=umd jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshrmn/curi/tree/master/packages/react-dom"
+  },
+  "keywords": [
+    "React",
+    "react-dom",
+    "Curi",
+    "router",
+    "navigation"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "@curi/react-universal": "file:../react-universal",
+    "@curi/types": "file:../types",
+    "@types/react": "^16.7.18"
+  }
+}

@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:11.12.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Install
+          command: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Run tests on source
+          command: npm run test:source -- --concurrency=2
+
+      - run:
+          name: Run tests on CJS builds
+          command: npm run test:cjs -- --concurrency=2
+
+      - run:
+          name: Run tests on UMD builds
+          command: npm run test:umd -- --concurrency=2

@@ -1,0 +1,21 @@
+{
+  "name": "@curi-example/active-links-react",
+  "private": true,
+  "description": "Style links differently when they are active",
+  "main": "index.js",
+  "keywords": [
+    "Curi",
+    "link",
+    "anchor",
+    "active"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/react-dom": "2.0.4",
+    "@curi/router": "2.1.2",
+    "@hickory/browser": "^2.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

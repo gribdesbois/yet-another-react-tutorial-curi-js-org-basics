@@ -1,0 +1,20 @@
+{
+  "name": "@curi-example/modal-vue",
+  "private": true,
+  "description": "Render a modal (pinterest/twitter)",
+  "main": "index.js",
+  "keywords": [
+    "curi",
+    "modal",
+    "pinterest",
+    "twitter"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/router": "2.1.2",
+    "@curi/vue": "2.0.0-alpha.13",
+    "@hickory/browser": "^2.1.0",
+    "vue": "^2.5.22"
+  }
+}

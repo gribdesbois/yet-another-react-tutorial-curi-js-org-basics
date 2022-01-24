@@ -1,0 +1,15 @@
+{
+  "name": "@curi-example/code-splitting",
+  "private": true,
+  "description": "Code splitting with curi",
+  "main": "public/js/index.js",
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/react-dom": "2.0.4",
+    "@curi/router": "2.1.2",
+    "@hickory/browser": "^2.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

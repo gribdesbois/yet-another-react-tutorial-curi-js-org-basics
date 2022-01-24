@@ -1,0 +1,19 @@
+{
+  "name": "@curi-example/multi-body-react",
+  "private": true,
+  "description": "Attach multiple components to response.body",
+  "main": "index.js",
+  "keywords": [
+    "curi"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/react-dom": "2.0.4",
+    "@curi/router": "2.1.2",
+    "@hickory/browser": "^2.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

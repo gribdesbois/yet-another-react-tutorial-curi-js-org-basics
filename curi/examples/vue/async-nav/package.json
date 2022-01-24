@@ -1,0 +1,21 @@
+{
+  "name": "@curi-example/async-nav-vue",
+  "private": true,
+  "description": "Display a spinner while navigation is happening",
+  "main": "index.js",
+  "keywords": [
+    "curi",
+    "prefetch",
+    "data",
+    "loading"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/router": "2.1.2",
+    "@curi/vue": "2.0.0-alpha.13",
+    "@hickory/browser": "^2.1.0",
+    "epic-spinners": "^1.0.3",
+    "vue": "^2.5.22"
+  }
+}

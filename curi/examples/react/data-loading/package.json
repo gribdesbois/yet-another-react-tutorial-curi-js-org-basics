@@ -1,0 +1,21 @@
+{
+  "name": "@curi-example/data-loading-react",
+  "private": true,
+  "description": "Prefetch data before navigating",
+  "main": "index.js",
+  "keywords": [
+    "curi",
+    "prefetch",
+    "data",
+    "loading"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/react-dom": "2.0.4",
+    "@curi/router": "2.1.2",
+    "@hickory/browser": "^2.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

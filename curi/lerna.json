@@ -1,0 +1,13 @@
+{
+  "version": "independent",
+  "packages": [
+    "packages/*",
+    "examples",
+    "examples/misc/*",
+    "examples/react/*",
+    "examples/svelte/*",
+    "examples/vue/*",
+    "website"
+  ],
+  "ignoreChanges": ["packages/**/tests/**", "packages/**/*.md"]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@curi/router",
+  "version": "2.1.2",
+  "description": "A JavaScript router that doesn't care how you render",
+  "main": "dist/curi-router.js",
+  "module": "dist/curi-router.es.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "*.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prebuild": "rimraf dist && rimraf types",
+    "build": "rollup -c",
+    "coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "test": "npm run test:source && npm run test:cjs && npm run test:umd",
+    "test:cjs": "TEST_ENV=cjs jest",
+    "test:source": "jest",
+    "test:umd": "TEST_ENV=umd jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshrmn/curi/tree/master/packages/router"
+  },
+  "keywords": [
+    "URL",
+    "URI",
+    "routing",
+    "navigation"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "dependencies": {
+    "@curi/interactions": "file:../interactions",
+    "@curi/types": "file:../types",
+    "@hickory/root": "^2.1.0",
+    "path-to-regexp": "^2.1.0"
+  }
+}

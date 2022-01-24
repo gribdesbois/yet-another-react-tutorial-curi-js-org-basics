@@ -1,0 +1,42 @@
+{
+  "name": "@curi/vue",
+  "version": "2.0.0-alpha.13",
+  "description": "Curi plugins and components for Vue.js",
+  "main": "dist/curi-vue.js",
+  "module": "dist/curi-vue.es.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "*.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prebuild": "rimraf dist && rimraf types",
+    "build": "rollup -c",
+    "coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "test": "npm run test:source && npm run test:cjs && npm run test:umd",
+    "test:cjs": "TEST_ENV=cjs jest",
+    "test:source": "jest",
+    "test:umd": "TEST_ENV=umd jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshrmn/curi/tree/master/packages/vue"
+  },
+  "keywords": [
+    "Curi",
+    "Vue",
+    "navigation",
+    "router"
+  ],
+  "author": "Paul Sherman",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.5.2"
+  },
+  "dependencies": {
+    "@curi/types": "file:../types",
+    "@hickory/root": "^2.1.0"
+  }
+}
